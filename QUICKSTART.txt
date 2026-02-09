@@ -1,0 +1,77 @@
+╔══════════════════════════════════════════════════════════════╗
+║                   ChatFlow - Quick Start                     ║
+╚══════════════════════════════════════════════════════════════╝
+
+📋 PREREQUISITES:
+   • Node.js 20+
+   • API key from ONE provider:
+     - Anthropic (https://console.anthropic.com/)
+     - OpenAI (https://platform.openai.com/)
+     - Google (https://makersuite.google.com/app/apikey)
+
+🚀 GET STARTED IN 3 STEPS:
+
+   1️⃣  Choose Provider & Configure API Key
+      Edit: packages/backend/.env
+
+      Option A (Anthropic):
+      AI_PROVIDER=anthropic
+      ANTHROPIC_API_KEY=sk-ant-your-key-here
+
+      Option B (OpenAI):
+      AI_PROVIDER=openai
+      OPENAI_API_KEY=sk-your-key-here
+
+      Option C (Gemini):
+      AI_PROVIDER=gemini
+      GEMINI_API_KEY=your-key-here
+
+   2️⃣  Start Application
+      Run:  npm run dev
+      (From project root directory)
+
+   3️⃣  Open Browser
+      URL:  http://localhost:5173
+
+✨ WHAT'S WORKING:
+   ✅ Beautiful floating chat interface
+   ✅ Multi-provider AI (Anthropic, OpenAI, Google)
+   ✅ Real-time conversations with your chosen AI
+   ✅ Responsive design with gradients & icons
+   ✅ Full TypeScript support
+   ✅ Provider-agnostic architecture
+
+🔧 TROUBLESHOOTING:
+
+   Backend won't start?
+   → Check API key in packages/backend/.env
+   → Verify you see: "🔑 Anthropic API key: ✓ Set"
+
+   Frontend won't connect?
+   → Make sure backend is running (port 3000)
+   → Check: http://localhost:3000/api/health
+
+   Port conflicts?
+   → Change PORT in packages/backend/.env
+   → Change port in packages/frontend/vite.config.ts
+
+📚 MORE INFO:
+   • MULTI_PROVIDER_GUIDE.md - Provider comparison & setup
+   • GETTING_STARTED.md      - Detailed setup guide
+   • README.md               - Full documentation
+   • CLAUDE.md               - Architecture & patterns
+   • CONTEXT.md              - Development progress
+
+🎯 TRY THESE MESSAGES:
+   → "Hello, what can you help me with?"
+   → "Tell me about ChatFlow's capabilities"
+   → "What integrations will you support?"
+
+💡 NEXT STEPS:
+   Slice 2 (coming soon): MCP integration for tool calling
+   Slice 3 (coming soon): Supabase project management
+   Slice 4 (coming soon): Secure credential vault
+
+════════════════════════════════════════════════════════════════
+Built with Claude Code 🤖 | MIT License
+════════════════════════════════════════════════════════════════
